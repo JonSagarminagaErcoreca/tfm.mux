@@ -1,14 +1,14 @@
 html, body, p, article, section{
-  display: inline-block;
-  background:linear-gradient(45deg, blue, red) !important;
+  display: flexbox;
+  background:linear-gradient(45deg, rgb(25rgb(255, 255, 255)255, 255), rgb(255, 255, 255)) !important;
   height: 100% !important;
   
 }
 
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto','Open Sans', sans-serif;
   font-size: 16px;
-  background:linear-gradient(45deg, blue, red) !important;
+  background:linear-gradient(45deg, rgb(255, 255, 255), rgb(212, 212, 212)) !important;
   height: 100% !important;
 }
   
@@ -17,8 +17,41 @@ body{
   /* HEADER */
   
   .header{
-    background: rgb(207, 15, 15);
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.16);
-    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.16);
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.16);
+    background: rgb(255, 255, 255);
+   padding-top: 3%;
+   padding-bottom: 3%;
+    /*-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.16);#
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.16);*/
+  }
+
+  .logo{
+    /*align-items: center;
+    align-content: space-between;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+    
+  }
+
+  li {
+    list-style-type: none;
+    float: left;
+    /*align-content: space-between;
+    align-items: center*/
+  }
+  
+  li a {
+    list-style-type: none;
+    font-family: 'Roboto','Open Sans', sans-serif;
+    display: block;
+    color: rgb(110, 110, 110);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111111;
   }
